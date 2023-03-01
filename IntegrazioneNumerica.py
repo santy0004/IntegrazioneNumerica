@@ -1,7 +1,7 @@
 #f(x) definiamo la funzione da integrare
 #f_2(x) definiamo la derivata seconda per ridurre l'errore
 #d_4(x) definiamo la derivata 4 per ridurre l'errore
-#errore calcolo dell'errore
+#err*** calcolo dell'errore
 
 
 
@@ -10,7 +10,7 @@ def f(x):
     return x**7
 
 def d_4(x):
-    return 840*(x**3)
+    return 840*(x**7)
 
 def Parabola(f, a, b, n):
     h = (b - a) / n
@@ -29,10 +29,10 @@ def errparab(a, b, n):
 
 #>>>>>>>>>>>>>>>>>>>>>>>>> Regola dei Rettangoli >>>>>>>>>>>>>>>>>>>>>>>>>
 def f(x):
-    return x**7
+    return x**4
 
 def f_2(x):
-    return (x**6)*7
+    return (x**3)*4
 
 def Rettangolo(f, a, b, n):
     h = (b - a) / n
@@ -48,10 +48,10 @@ def errrett(a, b, n):
 
 #>>>>>>>>>>>>>>>>>>>>>>>>> Regola dei trapezi >>>>>>>>>>>>>>>>>>>>>>>>>
 def f(x):
-    return x**7
+    return x**4
 
 def f_2(x):
-    return (x**6)*7
+    return (x**3)*4
 
 def Trapezi(f, a, b, n):
     h = (b-a)/n
