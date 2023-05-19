@@ -88,5 +88,7 @@ while True:
     elif metodo == 3:
         print("L'integrale della funzione f(x) è", Parabola(f, a, b, n))
         print("L'errore è <= ", errtrap(a, b, n))
+     elif metodo == 4:
+        break
     else:
         print("scelta non disponibile")
